@@ -80,6 +80,7 @@ nav .navbar .menu{
     position: absolute;
     top: 65px;
     width: 100%;
+    padding-left: 5%;
 
 }
 .row2{
@@ -88,6 +89,7 @@ nav .navbar .menu{
     position: absolute;
     top: 240px;
     width: 100%;
+    padding-left: 5%;
 
 }
 .row3{
@@ -96,6 +98,7 @@ nav .navbar .menu{
     position: absolute;
     top: 415px;
     width: 100%;
+    padding-left: 5%;
 
 }
 .book{
@@ -104,6 +107,7 @@ nav .navbar .menu{
     text-align: center;
     width: 8%;
     margin: 0 1% 0 1%;
+    overflow: hidden;
 }
 
 img{
