@@ -7,6 +7,10 @@ nav{
     background: #4C6444;
     z-index: 1;
 }
+
+body{
+    height: 100vh;
+}
 nav .navbar{
     display: flex;
     align-items: center;
@@ -59,7 +63,7 @@ nav .navbar .menu{
     top: 103px;
     left: 15%;
     width: 70%;
-    height: 570px;
+    height: 100%;
     background: rgba(87, 31, 0, 0.72);
 }
 

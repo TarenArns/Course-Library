@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>courseFilterTest</title>
+  <link rel="stylesheet" href="../../Downloads/dist/search.css">
+
+</head>
+<body>
+
+<div class="courses-wrap">
+  <p><strong>Course Level:</strong></p>
+  <form>
+    <label><input type="checkbox" name="course-level" value="1000" id="1000" /> 1000</label><br>
+    <label><input type="checkbox" name="course-level" value="2000" id="2000" /> 2000</label><br>
+    <label><input type="checkbox" name="course-level" value="3000" id="3000" /> 3000</label><br>
+    <label><input type="checkbox" name="course-level" value="4000" id="4000" /> 4000</label><br>
+    <label><input type="checkbox" name="course-level" value="4000+" id="4000+" /> 4000+</label><br>
+  </form>
+  <p><strong>Faculty:</strong></p>
+  <form>
+    <label><input type="checkbox" name="faculty" value="sch_art" id="sch_art" /> School of Art</label><br>
+    <label><input type="checkbox" name="faculty" value="fac_arts" id="arts" /> Faculty of Arts</label><br>
+    <label><input type="checkbox" name="faculty" value="fac_science" id="fac_science" /> Faculty of Science</label><br>
+  </form>
+  <p><strong>Credit Hours:</strong></p>
+  <form>
+    <label><input type="checkbox" name="credit-hours" value="0cr" id="0cr" /> 0 Credit Hours</label><br>
+    <label><input type="checkbox" name="credit-hours" value="1.5cr" id="1.5cr" /> 1.5 Credit Hours</label><br>
+    <label><input type="checkbox" name="credit-hours" value="3cr" id="3cr" /> 3 Credit Hours</label><br>
+  </form>
+  <p><strong>Attributes:</strong></p>
+  <form>
+    <label><input type="checkbox" name="attribute" value="wre" id="wre" /> Written English Requirement</label><br>
+    <label><input type="checkbox" name="attribute" value="ric" id="ric" /> Recommended Intro Course</label><br>
+    <label><input type="checkbox" name="attribute" value="sosc" id="sosc" /> Social Science</label><br>
+    <label><input type="checkbox" name="attribute" value="humanities" id="humanities" /> Humanities</label><br>
+    <label><input type="checkbox" name="attribute" value="science" id="science" /> Science</label><br>
+  </form>
+</div>
+
+<div class="courses">
+  <div class="course" data-id="faah1030" data-category="1000 sch_art 3cr ric"><span class="tab"> FAAH 1030</span> Introduction to Art 1A</div>
+  <div class="course" data-id="faah2070" data-category="2000 sch_art 3cr"><span class="tab"> FAAH 2070</span> Renaissance to Baroque Art and Architecture</div>
+  <div class="course" data-id="faah4060" data-category="4000 sch_art 3cr"><span class="tab"> FAAH 4060</span> Seminar in Art Theory and Criticism</div>
+  <div class="course" data-id="arts1110" data-category="1000 fac_arts 3cr wre ric"><span class="tab">ARTS 1110</span> Introduction to University</div>
+  <div class="course" data-id="arts1160" data-category="1000 fac_arts 3cr sosc ric"><span class="tab">ARTS 1160</span> Leadership: An Interdisciplinary Approach</div>
+  <div class="course" data-id="arts2020" data-category="2000 fac_arts 3cr humanities"><span class="tab">ARTS 2020</span> Introduction to Health Humanities</div>
+  <div class="course" data-id="comp1000" data-category="1000 fac_science 3cr science ric"><span class="tab"> COMP 1000</span> Introductory Programming: Think Like a Computer</div>
+  <div class="course" data-id="comp2980" data-category="2000 fac_science 0cr science"><span class="tab"> COMP 2980</span> Workterm 1</div>
+  <div class="course" data-id="comp3020" data-category="3000 fac_science 3cr science"><span class="tab"> COMP 3020</span> Human-Computer Interaction 1</div>
+
+</div>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
