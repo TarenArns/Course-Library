@@ -65,6 +65,12 @@ nav .navbar .menu{
     width: 70%;
     height: 100%;
     background: rgba(87, 31, 0, 0.72);
+    border-style: solid;
+    border-width: 5px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color:  rgba(87, 31, 0, 0.72);
+
 }
 
 .bookCase .shelf{
