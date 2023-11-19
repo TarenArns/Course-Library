@@ -43,8 +43,8 @@ nav .navbar .menu{
 }
 
 .container{
-    position: relative;
-    top: 103px;
+    position: absolute;
+    top: 168px;
     left: 15%;
     width: 70%;
     height: 100%;
@@ -54,6 +54,7 @@ nav .navbar .menu{
     border-bottom: 0px;
     border-style: solid;
     border-color:  rgba(87, 31, 0, 0.72);
+    overflow-y: auto;
 }
 
 .shelfTitle {
@@ -95,6 +96,7 @@ nav .navbar .menu{
     float:left;
     width:70%;
     margin-top: 51px;
+    padding: 0% 0% 0% 15%;
 
 }
 
