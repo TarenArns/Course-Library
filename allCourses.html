@@ -14,16 +14,128 @@
         <li><a href="allCourses.html">All Classes</a></li>
         <li>My Bookshelf</li>
       </ul>
+
     </div>
   </nav>
+
 </header>
+
 <body style="background-color: #CABA9C">
 <div class="shelfTitle">
-    <!------------------------CHNAGE THIS VALUE TO CHANGE THE TITLE ABOVE THE SHELF---------------------------------------->
+    <!------------------------CHANGE THIS VALUE TO CHANGE THE TITLE ABOVE THE SHELF---------------------------------------->
     <p>ALL COURSES</p>
 </div>
+<script src="./script.js"></script>
+
+<div class="courses-filter">
+    <p><strong>Course Level:</strong><p>
+    <form>
+        <label><input type="checkbox" name="course-level" value="1000" id="1000" /> 1000</label><br>
+        <label><input type="checkbox" name="course-level" value="2000" id="2000" /> 2000</label><br>
+        <label><input type="checkbox" name="course-level" value="3000" id="3000" /> 3000</label><br>
+        <label><input type="checkbox" name="course-level" value="4000" id="4000" /> 4000</label><br>
+    </form>
+
+    <p><strong>Faculty:</strong></p>
+    <form>
+        <label><input type="checkbox" name="faculty" value="fac_arts" id="fac_arts" /> Faculty of Arts</label><br>
+        <label><input type="checkbox" name="faculty" value="fac_kine" id="fac_kine" /> Faculty of Kinesiology and Recreation Management</label><br>
+        <label><input type="checkbox" name="faculty" value="fac_mgmt" id="fac_mgmt" /> Faculty of Management/I.H. Asper School of Business</label><br>
+        <label><input type="checkbox" name="faculty" value="fac_science" id="fac_science" /> Faculty of Science</label><br>
+    </form>
+    <p><strong>Credit Hours:</strong></p>
+    <form>
+        <label><input type="checkbox" name="credit-hours" value="1.5cr" id="1.5cr" /> 1.5 Credit Hours</label><br>
+        <label><input type="checkbox" name="credit-hours" value="3cr" id="3cr" /> 3 Credit Hours</label><br>
+        <label><input type="checkbox" name="credit-hours" value="6cr" id="6cr" /> 6 Credit Hours</label><br>
+    </form>
+    <p><strong>Attributes:</strong></p>
+    <form>
+        <label><input type="checkbox" name="attribute" value="humanities" id="humanities" /> Humanities</label><br>
+        <label><input type="checkbox" name="attribute" value="ric" id="ric" /> Recommended Intro Course</label><br>
+        <label><input type="checkbox" name="attribute" value="math" id="math" /> Mathematics Requirement</label><br>
+        <label><input type="checkbox" name="attribute" value="science" id="science" /> Science</label><br>
+        <label><input type="checkbox" name="attribute" value="wre" id="wre" /> Written English Requirement</label><br>
+    </form>
+</div>
+
   <div class="container">
-    <div class="shelfNav"> </div>
+      <div class="shelfNav">
+          <div class ="course-search">
+              <input id="searchbar" onkeyup="search_course()" type="text"
+                     name="search" placeholder="Search Courses..">
+              <script src="./script.js"></script>
+          </div>
+
+      </div>
+
+      <div class="courses">
+          <div class="course" data-id="acc1100" data-category="1000 fac_mgmt 3cr"> ACC1100 &nbsp; Introductory Financial Accounting</div>
+          <div class="course" data-id="acc1110" data-category="1000 fac_mgmt 3cr"> ACC1110 &nbsp; Introductory Managerial Accounting</div>
+          <div class="course" data-id="acc3010" data-category="3000 fac_mgmt 3cr"> ACC3010 &nbsp; Data Analytics in Accounting</div>
+          <div class="course" data-id="acc3040" data-category="3000 fac_mgmt 3cr"> ACC3040 &nbsp; Cost Accounting</div>
+          <div class="course" data-id="acc3080" data-category="3000 fac_mgmt 3cr"> ACC3080 &nbsp; Canadian Income Taxation</div>
+          <div class="course" data-id="acc4010" data-category="4000 fac_mgmt 3cr"> ACC4010 &nbsp; Auditing</div>
+          <div class="course" data-id="acc4030" data-category="4000 fac_mgmt 3cr"> ACC4030 &nbsp; Accounting Theory</div>
+          <div class="course" data-id="acc4040" data-category="4000 fac_mgmt 3cr"> ACC4040 &nbsp; Advanced Managerial Accounting</div>
+
+
+          <div class="course" data-id="asia1420" data-category="1000 fac_arts 6cr humanities ric wre"> ASIA1420 &nbsp; Asian Civilizations to 1500 (B)</div>
+          <div class="course" data-id="asia1750" data-category="1000 fac_arts 6cr humanities ric"> ASIA1750 &nbsp; Introduction to Korean</div>
+          <div class="course" data-id="asia1760" data-category="1000 fac_arts 6cr humanities ric"> ASIA1760 &nbsp; Introduction to Chinese (Mandarin)</div>
+          <div class="course" data-id="asia1790" data-category="1000 fac_arts 6cr humanities"> ASIA1790 &nbsp; Basic Hindi-Urdu</div>
+          <div class="course" data-id="asia2080" data-category="2000 fac_arts 3cr humanities"> ASIA2080 &nbsp; South Asian Civilization</div>
+          <div class="course" data-id="asia2570" data-category="2000 fac_arts 3cr humanities"> ASIA2570 &nbsp; History, Culture, and Society in Chinese Film</div>
+          <div class="course" data-id="asia2750" data-category="2000 fac_arts 6cr humanities"> ASIA2750 &nbsp; Intermediate Korean</div>
+          <div class="course" data-id="asia2760" data-category="2000 fac_arts 6cr humanities"> ASIA2760 &nbsp; Intermediate Chinese (Mandarin)</div>
+          <div class="course" data-id="asia3480" data-category="3000 fac_arts 3cr humanities"> ASIA3480 &nbsp; Selected Topics in Asian Studies 1</div>
+          <div class="course" data-id="asia3490" data-category="3000 fac_arts 3cr humanities"> ASIA3490 &nbsp; Selected Topics in Asian Studies 2</div>
+          <div class="course" data-id="asia3560" data-category="3000 fac_arts 3cr humanities"> ASIA3560 &nbsp; Themes and Genres in Asian Literature </div>
+          <div class="course" data-id="asia3750" data-category="3000 fac_arts 6cr humanities"> ASIA3750 &nbsp; Advanced Korean</div>
+          <div class="course" data-id="asia3760" data-category="3000 fac_arts 6cr humanities"> ASIA3760 &nbsp; Advanced Chinese (Mandarin)</div>
+
+          <div class="course" data-id="comp1000" data-category="1000 fac_science 3cr science ric"> COMP1000&nbsp; Introductory Programming: Think Like a Computer</div>
+          <div class="course" data-id="comp1002" data-category="1000 fac_science 1.5cr science">COMP1002 &nbsp; Introduction to Tools and Techniques in Computer Science 1</div>
+          <div class="course" data-id="comp1010" data-category="1000 fac_science 3cr science ric">COMP1010 &nbsp; Introductory Computer Science 1</div>
+          <div class="course" data-id="comp2080" data-category="2000 fac_science 3cr science"> COMP2080&nbsp; Analysis of Algorithms</div>
+          <div class="course" data-id="comp2150" data-category="2000 fac_science 3cr science"> COMP2150&nbsp; Object Orientation</div>
+          <div class="course" data-id="comp2280" data-category="2000 fac_science 3cr science"> COMP2280&nbsp; Introduction to Computer Systems</div>
+          <div class="course" data-id="comp3020" data-category="3000 fac_science 3cr science"> COMP3020&nbsp; Human-Computer Interaction 1</div>
+          <div class="course" data-id="comp3170" data-category="3000 fac_science 3cr science"> COMP3170&nbsp; Analysis of Algorithms and Data Structures</div>
+          <div class="course" data-id="comp3350" data-category="3000 fac_science 3cr science"> COMP3350&nbsp; Software Engineering 1</div>
+          <div class="course" data-id="comp4020" data-category="4000 fac_science 3cr science">COMP4020 &nbsp; Human-Computer Interaction 2</div>
+          <div class="course" data-id="comp4340" data-category="4000 fac_science 3cr science">COMP4340 &nbsp; Graph Theory Algorithms 1</div>
+          <div class="course" data-id="comp4350" data-category="4000 fac_science 3cr science">COMP4350 &nbsp; Software Engineering 2</div>
+
+          <div class="course" data-id="kper1200" data-category="1000 fac_kine 3cr ric"> KPER1200 &nbsp; Physical Activity, Health and Wellness</div>
+          <div class="course" data-id="kper1400" data-category="1000 fac_kine 3cr ric"> KPER1400 &nbsp; Concepts of Recreation and Leisure</div>
+          <div class="course" data-id="kper1500" data-category="1000 fac_kine 3cr ric"> KPER1500 &nbsp; Foundations of Physical Education and Kinesiology</div>
+          <div class="course" data-id="kper2120" data-category="2000 fac_kine 3cr wre"> KPER2120 &nbsp; Academic Skills in Kinesiology and Recreation Management </div>
+          <div class="course" data-id="kper2170" data-category="2000 fac_kine 3cr"> KPER2170 &nbsp; History of Physical Activity and Leisure</div>
+          <div class="course" data-id="kper2320" data-category="2000 fac_kine 3cr"> KPER2320 &nbsp; Human Anatomy</div>
+          <div class="course" data-id="kper3100" data-category="3000 fac_kine 3cr"> KPER3100 &nbsp; Inclusive Physical Activity and Leisure</div>
+          <div class="course" data-id="kper3140" data-category="3000 fac_kine 3cr"> KPER3140 &nbsp; Health Promotion</div>
+          <div class="course" data-id="kper3470" data-category="3000 fac_kine 3cr"> KPER3470 &nbsp; Exercise Physiology</div>
+          <div class="course" data-id="kper4110" data-category="4000 fac_kine 3cr"> KPER4110 &nbsp; The Olympics and the Global Sporting Event</div>
+          <div class="course" data-id="kper4310" data-category="4000 fac_kine 3cr"> KPER4310 &nbsp; Physical Activity Counselling</div>
+          <div class="course" data-id="kper4320" data-category="4000 fac_kine 3cr"> KPER4320 &nbsp; Sport and the Body</div>
+
+          <div class="course" data-id="math1010" data-category="1000 fac_science 3cr math science ric"> MATH1010 &nbsp; Applied Finite Mathematics</div>
+          <div class="course" data-id="math1240" data-category="1000 fac_science 3cr math science ric"> MATH1240 &nbsp; Elementary Discrete Mathematics</div>
+          <div class="course" data-id="math1500" data-category="1000 fac_science 3cr math science ric"> MATH1500 &nbsp; Introduction to Calculus</div>
+          <div class="course" data-id="math2020" data-category="2000 fac_science 3cr math science"> MATH2020 &nbsp; Algebra 1</div>
+          <div class="course" data-id="math2030" data-category="2000 fac_science 3cr math science"> MATH2030 &nbsp; Combinatorics 1</div>
+          <div class="course" data-id="math2740" data-category="2000 fac_science 3cr math science"> MATH2740 &nbsp; Mathematics of Data Science</div>
+          <div class="course" data-id="math3320" data-category="3000 fac_science 3cr math science"> MATH3320 &nbsp; Algebra 2</div>
+          <div class="course" data-id="math3322" data-category="3000 fac_science 3cr math science"> MATH3322 &nbsp; Algebra 3</div>
+          <div class="course" data-id="math3360" data-category="3000 fac_science 3cr math science"> MATH3360 &nbsp; Combinatorics 2</div>
+          <div class="course" data-id="math4280" data-category="4000 fac_science 3cr math science"> MATH4280 &nbsp; Basic Functional Analysis</div>
+          <div class="course" data-id="math4300" data-category="4000 fac_science 3cr math science"> MATH4300 &nbsp; Combinatorial Geometry</div>
+          <div class="course" data-id="math4370" data-category="4000 fac_science 3cr math science"> MATH4370 &nbsp; Linear Algebra and Matrix Analysis</div>
+
+
+      </div>
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script><script  src="./script.js"></script>
   </div>
 
 </body>

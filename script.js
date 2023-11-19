@@ -1,4 +1,5 @@
 var $filterCheckboxes = $('input[type="checkbox"]');
+var $filteredResults = $('.course');
 var filterFunc = function() {
   
   var selectedFilters = {};
@@ -13,12 +14,12 @@ var filterFunc = function() {
   });
 
   // create a collection containing all of the filterable elements
-  let $filteredResults = $('.course');
+  $filteredResults = $('.course');
 
   // loop over the selected filter name -> (array) values pairs
   $.each(selectedFilters, function(name, filterValues) {
 
-    // filter each .flower element
+    // filter each .course element
     $filteredResults = $filteredResults.filter(function() {
 
       var matched = false,
@@ -37,13 +38,29 @@ var filterFunc = function() {
         }
       });
 
-      // if matched is true the current .flower element is returned
+      // if matched is true the current .course element is returned
       return matched;
 
     });
   });
 
   $('.course').hide().filter($filteredResults).show();
+  search_course();
 }
 
 $filterCheckboxes.on('change', filterFunc);
+
+function search_course() {
+  let input = document.getElementById('searchbar').value
+  input=input.toLowerCase();
+  let x = $filteredResults;
+
+  for (i = 0; i < x.length; i++) {
+    if (!x[i].innerHTML.toLowerCase().includes(input)) {
+      x[i].style.display="none";
+    }
+    else {
+      x[i].style.display="list-item";
+    }
+  }
+}
