@@ -64,3 +64,13 @@ function search_course() {
     }
   }
 }
+
+// When the user clicks on div, open the popup
+function myFunction1() {
+  var popup = document.getElementById("pop1");
+  popup.classList.toggle("show");
+}
+function myFunction2() {
+  var popup = document.getElementById("pop2");
+  popup.classList.toggle("show");
+}

@@ -70,8 +70,20 @@
       </div>
 
       <div class="courses">
-          <div class="course" data-id="acc1100" data-category="1000 fac_mgmt 3cr"> ACC1100 &nbsp; Introductory Financial Accounting</div>
-          <div class="course" data-id="acc1110" data-category="1000 fac_mgmt 3cr"> ACC1110 &nbsp; Introductory Managerial Accounting</div>
+          <!----------------FOR ANYBODY WORKING ON THE POPUPS, IM SORRY------------------------------->
+          <!--Hello, a message from the bringer of pain, Taren. I tried, I really did. I cannot find a
+          solution to this problem other than this, and its more tedious that painting a wall with
+          nothing but a seagull feather. for each new popup, you must create a new function, I have been
+          naming them "myFunction(number of function)" that function will be identical to the others but the
+          pop# must match the number in the function. you should be able to copy and paste the second one i have done
+          (not the first, its different) to start. make sure you move the text that is to be displayed from the first
+          to the second div. once again, i am so sorry.-->
+          <div class="course" data-id="acc1110" data-category="1000 fac_mgmt 3cr">
+              <div class="popup" onclick="myFunction1()"> ACC1110 &nbsp; Introductory Managerial Accounting
+                  <span class="popuptext" id="pop1"><img class="topImg" src="ACC1110.png"></span></div></div>
+          <div class="course" data-id="acc1100" data-category="1000 fac_mgmt 3cr">
+              <div class="popup" onclick="myFunction2()"> ACC1100 &nbsp; Introductory Financial Accounting
+                  <span class="popuptext" id="pop2"><img src="ACC1100.png"></span></div></div>
           <div class="course" data-id="acc3010" data-category="3000 fac_mgmt 3cr"> ACC3010 &nbsp; Data Analytics in Accounting</div>
           <div class="course" data-id="acc3040" data-category="3000 fac_mgmt 3cr"> ACC3040 &nbsp; Cost Accounting</div>
           <div class="course" data-id="acc3080" data-category="3000 fac_mgmt 3cr"> ACC3080 &nbsp; Canadian Income Taxation</div>
