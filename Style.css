@@ -26,6 +26,9 @@ nav .navbar .logo a{
     font-weight: 600;
     text-decoration: none;
 }
+nav .navbar .logo a:hover{
+    color: white;
+}
 nav .navbar .menu{
     font-size: 20px;
     color: #CABA9C;
@@ -40,6 +43,10 @@ nav .navbar .menu{
     font-size: 17px;
     font-weight: 500;
     text-decoration: none;
+}
+
+.navbar .menu li a:hover{
+    color: white;
 }
 
 .shelfTitle {
