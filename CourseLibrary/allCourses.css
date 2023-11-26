@@ -1,0 +1,194 @@
+nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    background: #4C6444;
+    z-index: 100;
+}
+
+body{
+    height: 100vh;
+}
+nav .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 90%;
+    background: #4C6444;
+    margin: auto;
+}
+nav .navbar .logo a{
+    color: #CABA9C;
+    font-size: 27px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav .navbar .logo a:hover{
+    color: white;
+}
+
+nav .navbar .menu{
+    font-size: 20px;
+    color: #CABA9C;
+    display: flex;
+}
+.navbar .menu li{
+    list-style: none;
+    margin: 0 20px;
+}
+.navbar .menu li a{
+    color: #CABA9C;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.navbar .menu li a:hover{
+    color: white;
+}
+
+.container{
+    position: absolute;
+    top: 168px;
+    left: 15%;
+    width: 70%;
+    height: 100%;
+    background:  rgba(87, 31, 0, 0.72);
+    border-style: solid;
+    border-width: 5px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color:  rgba(87, 31, 0, 0.72);
+    overflow-y: auto;
+    overflow-x: visible;
+}
+
+.shelfTitle {
+    position: relative;
+    top: 44px;
+    margin: auto;
+    width: 100%;
+    height: 0px;
+    background-color: red;
+    text-align: center;
+    font-family: Inknut Antiqua;
+    font-size: 64px;
+    font-weight: 700;
+    text-shadow:
+            1px 1px 1px black,
+            2px 2px 1px black;
+}
+
+.shelfNav{
+    background-color:  rgba(87, 31, 0, 0.72);
+    position: absolute;
+    width: 100%;
+    height: 50px;
+}
+
+
+/*For course searching */
+.courses-filter {
+    float:left;
+    width:14%;
+    margin:6.5% 1% 0 0;
+    padding:0;
+    position:relative;
+    user-select: none;
+
+}
+
+.courses {
+    font-family: 'Arial', serif;
+    float:left;
+    width:70%;
+    margin-top: 51px;
+    padding: 0% 0% 0% 15%;
+
+}
+
+.courses div{
+    float:left;
+    width:90%;
+    height:68px;
+    line-height:68px;
+    padding:0 0 0 0;
+    margin:0 0 1px;
+    position:relative;
+    list-style: none;
+    background: white;
+    color: black;
+    transition-duration: 0.2s;
+}
+
+.courses div:hover{
+    background-color: #272727;
+    color: white;
+}
+
+.alph-jump {
+    right:12%;
+    margin:6.5% 0% 1% 0;
+    width:5px;
+    padding:0;
+    position:absolute;
+    user-select: none;
+}
+
+
+/* Popup container - can be anything you want */
+.popup {
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: visible;
+    padding: 0 5% !important;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0px 0px 0px 0px;
+    position: absolute;
+    z-index: 1;
+    bottom: -214%;
+    left: 82%;
+    margin-left: -80px;
+    overflow: visible;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    overflow: visible;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    overflow: visible;
+}
+
+img{
+    width: 300px;
+    height: 237px;
+    overflow: visible;
+    z-index: 99999999;
+}
+
+.topImg{
+    height: 237px;
+}
