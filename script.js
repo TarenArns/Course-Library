@@ -74,7 +74,94 @@ function myFunction2() {
   var popup = document.getElementById("pop2");
   popup.classList.toggle("show");
 }
-
+function myFunction3() {
+  var popup = document.getElementById("pop3");
+  popup.classList.toggle("show");
+}
+function myFunction4() {
+  var popup = document.getElementById("pop4");
+  popup.classList.toggle("show");
+}
+function myFunction5() {
+  var popup = document.getElementById("pop5");
+  popup.classList.toggle("show");
+}
+function myFunction6() {
+  var popup = document.getElementById("pop6");
+  popup.classList.toggle("show");
+}
+function myFunction7() {
+  var popup = document.getElementById("pop7");
+  popup.classList.toggle("show");
+}
+function myFunction8() {
+  var popup = document.getElementById("pop8");
+  popup.classList.toggle("show");
+}
+function myFunction9() {
+  var popup = document.getElementById("pop9");
+  popup.classList.toggle("show");
+}
+function myFunction10() {
+  var popup = document.getElementById("pop10");
+  popup.classList.toggle("show");
+}
+function myFunction11() {
+  var popup = document.getElementById("pop11");
+  popup.classList.toggle("show");
+}
+function myFunction12() {
+  var popup = document.getElementById("pop12");
+  popup.classList.toggle("show");
+}
+function myFunction13() {
+  var popup = document.getElementById("pop13");
+  popup.classList.toggle("show");
+}
+function myFunction14() {
+  var popup = document.getElementById("pop14");
+  popup.classList.toggle("show");
+}
+function myFunction15() {
+  var popup = document.getElementById("pop15");
+  popup.classList.toggle("show");
+}
+function myFunction16() {
+  var popup = document.getElementById("pop16");
+  popup.classList.toggle("show");
+}
+function myFunction17() {
+  var popup = document.getElementById("pop17");
+  popup.classList.toggle("show");
+}
+function myFunction18() {
+  var popup = document.getElementById("pop18");
+  popup.classList.toggle("show");
+}
+function myFunction19() {
+  var popup = document.getElementById("pop19");
+  popup.classList.toggle("show");
+}
+function myFunction20() {
+  var popup = document.getElementById("pop20");
+  popup.classList.toggle("show");
+}
+function myFunction21() {
+  var popup = document.getElementById("pop21");
+  popup.classList.toggle("show");
+}
+function myFunction22() {
+  var popup = document.getElementById("pop22");
+  popup.classList.toggle("show");
+}
+function myFunction23() {
+  var popup = document.getElementById("pop23");
+  popup.classList.toggle("show");
+}
+function myFunction24() {
+  var popup = document.getElementById("pop24");
+  popup.classList.toggle("show");
+}
 function myFunction100() {
   var popup = document.getElementById("pop100");
   popup.classList.toggle("show");
