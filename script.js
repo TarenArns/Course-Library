@@ -25,7 +25,7 @@ var filterFunc = function() {
       var matched = false,
         currentFilterValues = $(this).data('category').split(' ');
 
-      // loop over each category value in the current .flower's data-category
+      // loop over each category value in the current .course's data-category
       $.each(currentFilterValues, function(_, currentFilterValue) {
 
         // if the current category exists in the selected filters array
@@ -53,6 +53,7 @@ $filterCheckboxes.on('change', filterFunc);
 function search_course() {
   let input = document.getElementById('searchbar').value
   input=input.toLowerCase();
+
   let x = $filteredResults;
 
   for (i = 0; i < x.length; i++) {
@@ -60,8 +61,26 @@ function search_course() {
       x[i].style.display="none";
     }
     else {
-      x[i].style.display="list-item";
+      x[i].style.display="block";
     }
+  }
+  check_empty();
+}
+
+//Checks if the filtered list is empty, displays a message if it is, hides the message if it isn't
+function check_empty(){
+  let numVis = 0;
+  let x = $filteredResults;
+  for(i = 0; i < x.length; i++) {
+    if(x[i].style.display === "block")
+      numVis++;
+  }
+  let em = document.getElementById("empty_message");
+  if(numVis === 0) {
+    em.style.display = "block";
+  }
+  else {
+    em.style.display = "none";
   }
 }
 

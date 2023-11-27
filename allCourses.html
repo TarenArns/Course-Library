@@ -88,16 +88,20 @@
 </div>
 
   <div class="container">
+
       <div class="shelfNav">
           <div class ="course-search">
-              <input id="searchbar" onkeyup="search_course()" type="text"
+              <input id="searchbar" onkeyup="search_course()" type="search"
                      name="search" placeholder="Search Courses..">
               <script src="script.js"></script>
           </div>
-
       </div>
 
+      <div class = "empty_message" id="empty_message" style="display:none"> No Courses Found</div>
+
       <div class="courses">
+
+
           <!----------------FOR ANYBODY WORKING ON THE POPUPS, IM SORRY------------------------------->
           <!--Hello, a message from the bringer of pain, Taren. I tried, I really did. I cannot find a
           solution to this problem other than this, and its more tedious that painting a wall with
@@ -111,16 +115,16 @@
           <div class="course" data-id="acc1100" id="A" data-category="1000 fac_mgmt 3cr">
               <div class="popup" onclick="myFunction2()"> ACC1100 &nbsp; Introductory Financial Accounting
                   <span class="popuptext" id="pop2"><img src="classInfoPics/ACC1100.png"></span></div></div>
-          <div class="course" data-id="acc1101" data-category="1000 fac_mgmt 3cr">
+          <div class="course" data-id="acc1101" data-category="1000 fac_mgmt 3cr fr">
               <div class="popup" onclick="myFunction3()"> ACC1101 &nbsp; Introduction à la comptabilité financière
                   <span class="popuptext" id="pop3"><img class="topImg" src="classInfoPics/ACC1101.png"></span></div></div>
           <div class="course" data-id="acc1110" data-category="1000 fac_mgmt 3cr">
               <div class="popup" onclick="myFunction1()"> ACC1110 &nbsp; Introductory Managerial Accounting
                   <span class="popuptext" id="pop1"><img class="topImg" src="classInfoPics/ACC1110.png"></span></div></div>
-          <div class="course" data-id="acc2011" data-category="1000 fac_mgmt 3cr">
+          <div class="course" data-id="acc2011" data-category="1000 fac_mgmt 3cr fr">
               <div class="popup" onclick="myFunction4()"> ACC2011 &nbsp; Comptabilité intermédiaire-Actifs
                   <span class="popuptext" id="pop4"><img class="topImg" src="classInfoPics/ACC2011.png"></span></div></div>
-          <div class="course" data-id="acc2020" data-category="1000 fac_mgmt 3cr">
+          <div class="course" data-id="acc2020" data-category="1000 fac_mgmt 3cr ">
               <div class="popup" onclick="myFunction5()"> ACC2020 &nbsp; Intermediate Accounting
                   <span class="popuptext" id="pop5"><img class="topImg" src="classInfoPics/ACC2020.png"></span></div></div>
           <div class="course" data-id="acc3010" data-category="1000 fac_mgmt 3cr">
@@ -274,7 +278,6 @@
           <div class="course" data-id="math4470" data-category="4000 fac_science 3cr math science">
               <div class="popup" onclick="myFunction120()"> MATH4470 &nbsp; Rings and Modules
                   <span class="popuptext" id="pop120"><img class="topImg" src="classInfoPics/MATH4470.png"></span></div></div>
-          <a class="anchors" id = "Z"></a>
 
       </div>
       <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script><script  src="script.js"></script>
