@@ -156,6 +156,7 @@ nav .navbar .menu{
     user-select: none;
     overflow: visible;
     padding: 0 5% !important;
+    font-size: 20px;
 }
 
 /* The actual popup */
